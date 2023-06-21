@@ -29,7 +29,7 @@ const responsive = {
 const Carrousel = ({ images }) => {
 	return (
 		<div className="carouselContainer">
-			<Carousel responsive={responsive} infinite={true} showDots={true} swipeable={false} draggable={false}>
+			<Carousel responsive={responsive} infinite={true} showDots={true} swipeable={false} draggable={false} renderButtonGroupOutside={true}>
 				{images.map((image) => (
 					<div key={image} className="imgContainer">
 						<img src={image} alt="" />

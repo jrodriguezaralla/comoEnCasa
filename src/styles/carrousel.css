@@ -4,9 +4,15 @@
 	box-sizing: border-box;
 }
 
+.react-multi-carousel-list {
+	height: 400px;
+}
+
 .imgContainer img {
+	margin: 0;
+	padding: 0 10px 0 10px;
 	height: 310px;
-	width: 305.3px;
+	width: 315.3px;
 }
 
 .react-multi-carousel-dot-list {
@@ -21,4 +27,17 @@
 	height: 60px;
 	width: 60px;
 	background-color: #4f2d24;
+}
+
+.react-multi-carousel-dot button {
+	border-color: #02807e;
+	border-width: 2px;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.react-multi-carousel-dot--active button {
+	width: 50px;
+	border-radius: 18px;
+	background-color: #02807e;
+	transition: all 0.5s;
 }
