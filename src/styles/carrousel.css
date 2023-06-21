@@ -5,12 +5,23 @@
 }
 
 .react-multi-carousel-list {
-	height: 400px;
+	min-height: 400px;
+}
+
+.react-multi-carousel-item--active {
+	height: 310px;
+	width: 315.3px;
+}
+
+.imgContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .imgContainer img {
 	margin: 0;
-	padding: 0 10px 0 10px;
+	/* padding: 0 10px 0 10px; */
 	height: 310px;
 	width: 315.3px;
 }
@@ -29,6 +40,10 @@
 	background-color: #4f2d24;
 }
 
+.react-multiple-carousel__arrow:hover {
+	background-color: #4f2d24;
+}
+
 .react-multi-carousel-dot button {
 	border-color: #02807e;
 	border-width: 2px;
@@ -40,4 +55,12 @@
 	border-radius: 18px;
 	background-color: #02807e;
 	transition: all 0.5s;
+}
+
+.react-multiple-carousel__arrow--right {
+	right: calc(12% + 1px);
+}
+
+.react-multiple-carousel__arrow--left {
+	left: calc(12% + 1px);
 }
