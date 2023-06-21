@@ -1,0 +1,24 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.imgContainer img {
+	height: 310px;
+	width: 305.3px;
+}
+
+.react-multi-carousel-dot-list {
+	margin-top: 1rem;
+}
+
+.carouselContainer {
+	margin-top: 250px;
+}
+
+.react-multiple-carousel__arrow {
+	height: 60px;
+	width: 60px;
+	background-color: #4f2d24;
+}

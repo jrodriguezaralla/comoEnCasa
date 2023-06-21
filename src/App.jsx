@@ -1,13 +1,11 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
 import Carrousel from './components/Carrousel';
+import imagenesSalado from './exports/imagenesSalado';
 
 function App() {
 	return (
 		<>
-			<Carrousel />
+			<Carrousel images={imagenesSalado} />
 		</>
 	);
 }
