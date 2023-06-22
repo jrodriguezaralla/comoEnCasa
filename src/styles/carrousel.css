@@ -4,75 +4,11 @@
 	box-sizing: border-box;
 }
 
-.react-multi-carousel-list {
-	min-height: 400px;
-}
-
-.react-multi-carousel-item--active {
-	height: 310px;
-	width: 315.3px;
-}
-
-.imgContainer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.sliderContainer {
+	height: 500px;
 }
 
 .imgContainer img {
-	margin: 0;
-	/* padding: 0 10px 0 10px; */
+	width: 305.3px;
 	height: 310px;
-	width: 315.3px;
-}
-
-.react-multi-carousel-dot-list {
-	margin-top: 1rem;
-}
-
-.carouselContainer {
-	margin-top: 250px;
-}
-
-.react-multiple-carousel__arrow {
-	height: 60px;
-	width: 60px;
-	background-color: #4f2d24;
-}
-
-.react-multiple-carousel__arrow:hover {
-	background-color: #4f2d24;
-}
-
-.react-multi-carousel-dot button {
-	border-color: #02807e;
-	border-width: 2px;
-	background-color: rgba(255, 255, 255, 0);
-}
-
-.react-multi-carousel-dot--active button {
-	width: 50px;
-	border-radius: 18px;
-	background-color: #02807e;
-	transition: all 0.5s;
-}
-
-.react-multiple-carousel__arrow--right {
-	right: calc(12% + 1px);
-}
-
-.react-multiple-carousel__arrow--left {
-	left: calc(12% + 1px);
-}
-
-.imgTransformScale {
-	transform: scale(1.15);
-}
-
-.carousel-image {
-	transition: transform 0.5s;
-}
-
-.carousel-image.active {
-	transform: scale(1.2);
 }
