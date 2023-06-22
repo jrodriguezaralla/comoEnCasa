@@ -64,3 +64,15 @@
 .react-multiple-carousel__arrow--left {
 	left: calc(12% + 1px);
 }
+
+.imgTransformScale {
+	transform: scale(1.15);
+}
+
+.carousel-image {
+	transition: transform 0.5s;
+}
+
+.carousel-image.active {
+	transform: scale(1.2);
+}
