@@ -5,13 +5,17 @@ import MesaDeCumple from "../assets/Tartadejamonyqueso.jpg";
 import CajasDiasEspeciales from "../assets/Tapitasrogel.jpg";
 import VariadosParaFrezzer from "../assets/Simplesdequeso.jpg";
 import ComidaEventos from "../assets/Pizza.jpg";
+import LogoWhatsapp from "../assets/Logowhatsapp.jpg";
 
-function BasicExample1() {
+function EventosEspeciales() {
   const cardStyle = {
-    width: "27rem",
-    height: "27rem",
-    borderRadius: "50px",
+    width: "25rem",
+    height: "25rem",
     marginBottom: "40px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    position: "relative",
   };
 
   const titleStyle = {
@@ -19,19 +23,48 @@ function BasicExample1() {
     fontWeight: "bold",
     fontSize: "20px",
     textAlign: "center",
+    margin: 0,
   };
 
   const imageStyle = {
     width: "100%",
-    height: "auto",
-    maxHeight: "100%",
+    height: "100%",
+    objectFit: "cover",
+    borderTopLeftRadius: "50px",
+    borderTopRightRadius: "50px",
+    borderBottom: "1px solid white",
   };
 
   const bodyStyle = {
     backgroundColor: "#4F2D24",
     color: "white",
     padding: "30px",
-    margin: 0,
+    margin: "10px 0",
+    borderBottomLeftRadius: "50px",
+    borderBottomRightRadius: "50px",
+  };
+
+  const containerStyle = {
+    display: "flex",
+    justifyContent: "center",
+    position: "relative",
+  };
+
+  const logoContainerStyle = {
+    position: "absolute",
+    right: "140px",
+    bottom: "10px",
+  };
+
+  const logoStyle = {
+    width: "80px",
+    height: "80px",
+    marginBottom: "475px",
+    marginLeft: "15px",
+    borderBottomLeftRadius: "10px",
+    borderBottomRightRadius: "10px",
+    borderTopLeftRadius: "10px",
+    borderTopRightRadius: "10px",
   };
 
   return (
@@ -40,10 +73,8 @@ function BasicExample1() {
         Eventos Especiales
       </h1>
 
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <div
-          style={{ display: "flex", flexDirection: "column", margin: "10px" }}
-        >
+      <div style={containerStyle}>
+        <div style={{ margin: "10px" }}>
           <Card style={cardStyle}>
             <Card.Img variant="top" src={MesaDeCumple} style={imageStyle} />
             <Card.Body style={bodyStyle}>
@@ -63,9 +94,7 @@ function BasicExample1() {
           </Card>
         </div>
 
-        <div
-          style={{ display: "flex", flexDirection: "column", margin: "10px" }}
-        >
+        <div style={{ margin: "10px" }}>
           <Card style={cardStyle}>
             <Card.Img
               variant="top"
@@ -84,9 +113,15 @@ function BasicExample1() {
             </Card.Body>
           </Card>
         </div>
+
+        <div style={logoContainerStyle}>
+          <a href="https://api.whatsapp.com/send?phone=005491123153229">
+            <img src={LogoWhatsapp} alt="WhatsApp" style={logoStyle} />
+          </a>
+        </div>
       </div>
     </div>
   );
 }
 
-export default BasicExample1;
+export default EventosEspeciales;

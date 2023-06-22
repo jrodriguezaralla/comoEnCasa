@@ -1,18 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Header from "./components/header.jsx";
 import Footer from "./components/footer.jsx";
-import reactLogo from "./assets/react.svg";
-import atun from "./assets/atun.jpg";
-import jyqs from "./assets/jyqs.jpg";
-import viteLogo from "/vite.svg";
 import "./App.css";
-import iconoFacebook from "./assets/IconoFacebook.png";
-import iconoWhatsapp from "./assets/IconoWhatsapp.jpg";
-import iconoInstagram from "./assets/IconoInstagram.png";
 import BANNERFINAL from "./assets/BANNERFINAL.png";
 import fotojp from "./assets/fotojp.png";
-import BasicExample from "./components/tarjetas.jsx";
-import BasicExample1 from "./components/eventosespeciales.jsx";
+import Tarjetas from "./components/tarjetas.jsx";
+import EventosEspeciales from "./components/eventosespeciales.jsx";
 
 const boxStyle = {
   backgroundColor: "#04545c",
@@ -64,6 +57,10 @@ const imageStyle = {
   margin: "120px", // Agrega márgenes a la foto en los cuatro lados
 };
 
+const contentStyle = {
+  marginTop: "70px", // Agrega margen superior para el contenido
+};
+
 function App() {
   const [count, setCount] = useState(0);
   const [showFooter, setShowFooter] = useState(false);
@@ -84,8 +81,8 @@ function App() {
 
   return (
     <div className="app-container">
-      <div className="content">
-        <Header />
+      <Header />
+      <div className="content" style={contentStyle}>
         <img
           src={BANNERFINAL}
           alt="Foto Juan Pablo"
@@ -93,7 +90,7 @@ function App() {
           className="banner"
         />
 
-        <BasicExample />
+        <Tarjetas />
 
         <h1>Vite + React</h1>
         <div className="card">
@@ -102,7 +99,7 @@ function App() {
           </button>
         </div>
 
-        <BasicExample1 />
+        <EventosEspeciales />
 
         <div style={containerStyle}>
           <div

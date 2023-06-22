@@ -9,7 +9,7 @@ function Header() {
     padding: "10px",
     color: "#FFFFFF",
     width: "100%",
-    display: isHeaderVisible ? "flex" : "none", // Mostrar u ocultar el encabezado según el estado isHeaderVisible
+    display: isHeaderVisible ? "flex" : "none", // Mostrar/ocultar el encabezado según el estado isHeaderVisible
     alignItems: "center",
     justifyContent: "space-between",
   };
@@ -33,7 +33,7 @@ function Header() {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    marginRight: "40px", // Ajusta el margen derecho de la sección "¡Te doy la bienvenida a mi página web!"
+    marginRight: "40px",
     padding: "15px",
     width: "96%",
   };

@@ -34,12 +34,12 @@ function Footer() {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    marginRight: "130px",
   };
 
   const iconStyle = {
     width: "35px",
     height: "35px",
-    marginRight: "5px",
   };
 
   const textStyle = {
@@ -49,17 +49,54 @@ function Footer() {
     width: "100%",
   };
 
+  const imageStyle = {
+    maxWidth: "100%",
+    maxHeight: "100%",
+    width: "50px",
+    height: "50px",
+  };
+
   return (
     <footer style={footerStyle}>
-      <button style={buttonStyle}>
-        <img src={iconoInstagram} alt="Instagram" style={iconStyle} />
-      </button>
-      <button style={buttonStyle}>
-        <img src={iconoFacebook} alt="Facebook" style={iconStyle} />
-      </button>
-      <button style={buttonStyle}>
-        <img src={iconoWhatsapp} alt="WhatsApp" style={iconStyle} />
-      </button>
+      <a
+        href="https://www.facebook.com/comoencasanorteysur/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button style={buttonStyle}>
+          <img
+            src={iconoFacebook}
+            alt="Facebook"
+            style={{ ...iconStyle, ...imageStyle }}
+          />
+        </button>
+      </a>
+      <a
+        href="https://www.instagram.com/comoencasa_norteysur/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button style={buttonStyle}>
+          <img
+            src={iconoInstagram}
+            alt="Instagram"
+            style={{ ...iconStyle, ...imageStyle }}
+          />
+        </button>
+      </a>
+      <a
+        href="https://api.whatsapp.com/send?phone=005491123153229"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button style={buttonStyle}>
+          <img
+            src={iconoWhatsapp}
+            alt="WhatsApp"
+            style={{ ...iconStyle, ...imageStyle }}
+          />
+        </button>
+      </a>
     </footer>
   );
 }
