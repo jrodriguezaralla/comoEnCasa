@@ -1,9 +1,10 @@
 import Slider from './component/Slider';
+import imagenesSalado from './exports/imagenesSalado.js';
 
 function App() {
 	return (
 		<>
-			<Slider />
+			<Slider images={imagenesSalado} />
 		</>
 	);
 }
