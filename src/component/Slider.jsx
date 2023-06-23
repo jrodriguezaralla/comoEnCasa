@@ -13,7 +13,7 @@ import '../styles/slider.css';
 // import required modules
 import { Pagination, Navigation } from 'swiper';
 
-const SetArrows = () => {
+const setArrows = () => {
 	const myArrowNext = document.querySelector('.swiper-button-next');
 	const myArrowprev = document.querySelector('.swiper-button-prev');
 	myArrowNext.style.backgroundColor = 'red';
@@ -42,7 +42,7 @@ const SetArrows = () => {
 
 const Slider = ({ images }) => {
 	useEffect(() => {
-		SetArrows();
+		setArrows();
 	}, []);
 
 	return (
