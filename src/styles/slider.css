@@ -6,16 +6,6 @@
 .swiper-container {
 	height: 500px;
 }
-.swiper-button-prev .swiper-button-next {
-	background-color: #4f2d24 !important;
-	height: 60px !important;
-	width: 60px !important;
-	border-radius: 50% !important;
-	justify-content: center !important;
-	align-items: center !important;
-	color: white !important;
-	font-weight: bold !important;
-}
 
 .swiper-pagination-bullet {
 	background-color: white;
@@ -32,4 +22,9 @@
 	background-color: #02807e;
 	border-radius: 18px;
 	transition: width 0.5s;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+	font-size: 20px;
 }
