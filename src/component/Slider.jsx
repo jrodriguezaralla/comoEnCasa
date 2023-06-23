@@ -17,15 +17,15 @@ const Slider = ({ images }) => {
 	return (
 		<div>
 			<Swiper
-				slidesPerView={1}
-				spaceBetween={30}
+				slidesPerView={5}
+				spaceBetween={0}
 				loop={true}
 				pagination={{
 					clickable: true,
 				}}
 				navigation={true}
 				modules={[Pagination, Navigation]}
-				className="mySwiper"
+				className="swiper-container"
 			>
 				{images.map((image, index) => (
 					<SwiperSlide key={index} className="imgContainer">
