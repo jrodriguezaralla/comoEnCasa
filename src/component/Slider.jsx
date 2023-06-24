@@ -11,30 +11,33 @@ import '../styles/slider.css';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 
 const setArrows = () => {
-	const myArrowNext = document.querySelector('.swiper-button-next');
-	const myArrowprev = document.querySelector('.swiper-button-prev');
-	myArrowNext.style.backgroundColor = 'red';
-	myArrowNext.style.marginRight = '10%';
-	myArrowNext.style.backgroundColor = '#4f2d24';
-	myArrowNext.style.height = '60px';
-	myArrowNext.style.width = '60px';
-	myArrowNext.style.borderRadius = '50%';
-	myArrowNext.style.justifyContent = 'center';
-	myArrowNext.style.alignItems = 'center';
-	myArrowNext.style.color = 'white';
-	myArrowNext.style.fontWeight = 'bold';
-	myArrowNext.style.fontSize = '2px';
+	const myArrowNext = document.querySelectorAll('.swiper-button-next');
+	const myArrowPrev = document.querySelectorAll('.swiper-button-prev');
+	console.log(myArrowNext);
+	myArrowNext.forEach((ArrowNext) => {
+		ArrowNext.style.marginRight = '10%';
+		ArrowNext.style.backgroundColor = '#4f2d24';
+		ArrowNext.style.height = '60px';
+		ArrowNext.style.width = '60px';
+		ArrowNext.style.borderRadius = '50%';
+		ArrowNext.style.justifyContent = 'center';
+		ArrowNext.style.alignItems = 'center';
+		ArrowNext.style.color = 'white';
+		ArrowNext.style.fontWeight = 'bold';
+		ArrowNext.style.fontSize = '2px';
+	});
 
-	myArrowprev.style.backgroundColor = 'red';
-	myArrowprev.style.marginLeft = '10%';
-	myArrowprev.style.backgroundColor = '#4f2d24';
-	myArrowprev.style.height = '60px';
-	myArrowprev.style.width = '60px';
-	myArrowprev.style.borderRadius = '50%';
-	myArrowprev.style.justifyContent = 'center';
-	myArrowprev.style.alignItems = 'center';
-	myArrowprev.style.color = 'white';
-	myArrowprev.style.fontWeight = 'bold';
+	myArrowPrev.forEach((ArrowPrev) => {
+		ArrowPrev.style.marginLeft = '10%';
+		ArrowPrev.style.backgroundColor = '#4f2d24';
+		ArrowPrev.style.height = '60px';
+		ArrowPrev.style.width = '60px';
+		ArrowPrev.style.borderRadius = '50%';
+		ArrowPrev.style.justifyContent = 'center';
+		ArrowPrev.style.alignItems = 'center';
+		ArrowPrev.style.color = 'white';
+		ArrowPrev.style.fontWeight = 'bold';
+	});
 };
 
 const Slider = ({ images }) => {

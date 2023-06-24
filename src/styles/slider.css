@@ -172,9 +172,10 @@ body {
 	color: white;
 }
 
+/*
 .slider-controler .slider-arrow::after {
 	content: '';
-}
+}*/
 
 .swiper-pagination {
 	position: relative;

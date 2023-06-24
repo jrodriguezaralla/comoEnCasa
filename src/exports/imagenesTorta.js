@@ -1,11 +1,11 @@
-import torta1 from '../assets/torta/torta1.jpg';
-import torta2 from '../assets/torta/torta2.jpg';
-import torta3 from '../assets/torta/torta3.jpg';
-import torta4 from '../assets/torta/torta4.jpg';
-import torta5 from '../assets/torta/torta5.jpg';
-import torta6 from '../assets/torta/torta6.jpg';
-import torta7 from '../assets/torta/torta7.jpg';
-import torta8 from '../assets/torta/torta8.jpg';
-import torta9 from '../assets/torta/torta9.jpg';
+import T1 from '../assets/tortas/T1.png';
+import T2 from '../assets/tortas/T2.png';
+import T3 from '../assets/tortas/T3.png';
+import T4 from '../assets/tortas/T4.png';
+import T5 from '../assets/tortas/T5.png';
+import T6 from '../assets/tortas/T6.png';
+import T7 from '../assets/tortas/T7.png';
+import T8 from '../assets/tortas/T8.png';
+import T9 from '../assets/tortas/T9.png';
 
-export default [torta1, torta2, torta3, torta4, torta5, torta6, torta7, torta8, torta9];
+export default [T1, T2, T3, T4, T5, T6, T7, T8, T9];
