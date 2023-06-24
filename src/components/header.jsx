@@ -1,26 +1,51 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import logo from "../assets/logo.png";
 
 function Header() {
-  const [isHeaderVisible, setIsHeaderVisible] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const logo = document.querySelector("#header-logo");
+      const header = document.querySelector("header");
+      const h1 = document.querySelector("#header-title");
+
+      if (window.scrollY > 0) {
+        logo.style.opacity = "0";
+        header.style.backgroundColor = "transparent";
+        h1.style.opacity = "0";
+      } else {
+        logo.style.opacity = "1";
+        header.style.backgroundColor = "white";
+        h1.style.opacity = "1";
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const headerStyle = {
     backgroundColor: "white",
     padding: "10px",
     color: "#FFFFFF",
     width: "100%",
-    display: isHeaderVisible ? "flex" : "none", // Mostrar/ocultar el encabezado según el estado isHeaderVisible
+    display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
+    position: "fixed",
+    top: 0,
+    zIndex: 100,
   };
 
   const logoStyle = {
-    marginLeft: "60px", // Ajusta el margen izquierdo del logo
-    marginRight: "10px", // Ajusta el margen derecho del logo
-    marginTop: "1px", // Ajusta el margen superior del logo
-    marginBottom: "1px", // Ajusta el margen inferior del logo
+    marginLeft: "60px",
+    marginRight: "10px",
+    marginTop: "1px",
+    marginBottom: "1px",
     width: "400px",
     height: "auto",
+    transition: "opacity 0.3s ease-in-out",
   };
 
   const h1Style = {
@@ -36,6 +61,7 @@ function Header() {
     marginRight: "40px",
     padding: "15px",
     width: "96%",
+    transition: "opacity 0.3s ease-in-out", // Agregamos la transición de opacidad
   };
 
   const spanStyle = {
@@ -45,25 +71,13 @@ function Header() {
     alignItems: "center",
   };
 
-  const handleScroll = () => {
-    const isScrolledToTop = window.scrollY === 0;
-    setIsHeaderVisible(isScrolledToTop);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <header style={headerStyle}>
       <div>
-        <img src={logo} alt="Logo" style={logoStyle} />
+        <img id="header-logo" src={logo} alt="Logo" style={logoStyle} />
       </div>
       <div style={{ marginRight: "20px" }}>
-        <h1 style={h1Style}>
+        <h1 id="header-title" style={h1Style}>
           <div style={{ ...spanStyle, marginTop: "10px" }}>
             ¡Te doy la bienvenida a mi página web! Gracias por estar acá.
           </div>

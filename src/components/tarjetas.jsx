@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Iconoenvios from "../assets/Iconoenvios.png";
 import Iconoretiros from "../assets/Iconoretiros.png";
@@ -16,36 +15,41 @@ function Tarjetas() {
   };
 
   const cardStyle = {
-    width: "22rem",
-    height: "22rem",
-    margin: "35px", // Modifica el valor del margen
+    width: "400px", // Ancho de la tarjeta
+    height: "400px", // Alto de la tarjeta
+    margin: "10px", // Modifica el valor del margen (reducido a 10px)
     borderRadius: "10px",
     boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
   };
 
   const titleStyle = {
-    color: "#4F2D24", // Color del texto del Card.Title
+    color: "#4F2D24",
     fontFamily: "Futura-Bold, sans-serif",
-    fontWeight: "bold", // Agrega negrita al título
-    fontSize: "1.8rem", // Ajusta el tamaño del título
+    fontWeight: "bold",
+    fontSize: "40px", // Modificado el tamaño a 40px
+    textAlign: "center",
   };
 
   const bodyStyle = {
-    color: "black", // Color del texto del Card.Body
-    fontFamily: "Futura, sans-serif",
-    fontSize: "1rem", // Ajusta el tamaño del título
+    color: "black",
+    fontFamily: "Futura-Medium, sans-serif", // Cambiado a Futura-Medium
+    fontSize: "20px", // Modificado el tamaño a 20px
+    textAlign: "center",
   };
 
   const imageStyle = {
-    width: "60%", // Ajusta el ancho de la imagen para reducir su tamaño
-    height: "auto", // Ajusta la altura automáticamente
-    marginBottom: "10px", // Agrega margen inferior para separar la imagen del texto
+    width: "251px", // Ancho de la imagen
+    height: "auto", // Alto de la imagen
+    marginBottom: "10px",
   };
+
+  const lineStyle = {};
 
   return (
     <div style={containerStyle}>
       <Card style={cardStyle}>
         <Card.Img variant="top" src={Iconopedidos} style={imageStyle} />
+        <div style={lineStyle} />
         <Card.Body>
           <Card.Title style={titleStyle}>Pedidos</Card.Title>
           <Card.Text style={bodyStyle}>
@@ -56,7 +60,11 @@ function Tarjetas() {
 
       <Card style={cardStyle}>
         <Card.Img variant="top" src={Iconoenvios} style={imageStyle} />
+        <div style={lineStyle} />
         <Card.Body>
+          <br />
+          <br />
+          <br />
           <Card.Title style={titleStyle}>Envíos</Card.Title>
           <Card.Text style={bodyStyle}>
             Realizamos envíos a zona norte: Beccar, San Isidro, Martínez (sin
@@ -67,7 +75,9 @@ function Tarjetas() {
 
       <Card style={cardStyle}>
         <Card.Img variant="top" src={Iconoretiros} style={imageStyle} />
+        <div style={lineStyle} />
         <Card.Body>
+          <br />
           <Card.Title style={titleStyle}>Retiros</Card.Title>
           <Card.Text style={bodyStyle}>
             Una vez realizado el pedido, te enviaremos información para el

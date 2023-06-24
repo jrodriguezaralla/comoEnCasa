@@ -16,7 +16,7 @@ function Footer() {
   };
 
   const boxStyle = {
-    backgroundColor: "#04545c", // Color de la caja
+    backgroundColor: "#04545c",
     padding: "10px",
     display: "flex",
     alignItems: "center",
@@ -38,22 +38,23 @@ function Footer() {
   };
 
   const iconStyle = {
-    width: "35px",
-    height: "35px",
+    width: "60px",
+    height: "60px",
   };
 
   const textStyle = {
     fontFamily: "Futura, sans-serif",
-    color: "#FFFFFF", // Color del texto
-    fontSize: "14px", // Tamaño de la fuente
+    color: "#FFFFFF",
+    fontSize: "14px",
     width: "100%",
   };
 
   const imageStyle = {
     maxWidth: "100%",
     maxHeight: "100%",
-    width: "50px",
-    height: "50px",
+    width: "60px",
+    height: "60px",
+    borderRadius: "50%", // Agregamos el estilo para hacerlo redondo
   };
 
   return (
