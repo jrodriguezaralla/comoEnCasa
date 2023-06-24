@@ -1,17 +1,14 @@
 import React, { useEffect } from 'react';
-
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
 import 'swiper/css';
+import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import '../styles/slider.css';
 
-// import required modules
-import { Pagination, Navigation } from 'swiper';
+import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 
 const setArrows = () => {
 	const myArrowNext = document.querySelector('.swiper-button-next');
@@ -46,23 +43,39 @@ const Slider = ({ images }) => {
 	}, []);
 
 	return (
-		<div>
+		<div className="container">
 			<Swiper
-				slidesPerView={1}
-				spaceBetween={0}
+				effect={'coverflow'}
+				grabCursor={true}
+				centeredSlides={true}
 				loop={true}
-				pagination={{
+				slidesPerView={'auto'}
+				coverflowEffect={{
+					rotate: 0,
+					stretch: 20,
+					depth: 100,
+					modifier: 2.5,
+				}}
+				pagination={{ el: '.swiper-pagination', clickable: true }}
+				navigation={{
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
 					clickable: true,
 				}}
-				navigation={true}
-				modules={[Pagination, Navigation]}
-				className="swiper-container"
+				modules={[EffectCoverflow, Pagination, Navigation]}
+				className="swiper_container"
 			>
 				{images.map((image, index) => (
-					<SwiperSlide key={index} className="imgContainer">
+					<SwiperSlide key={index}>
 						<img src={image} alt="" />
 					</SwiperSlide>
 				))}
+				<div className="slider-controler">
+					<div className="swiper-pagination"></div>
+				</div>
+
+				<div className="swiper-button-prev slider-arrow"></div>
+				<div className="swiper-button-next slider-arrow"></div>
 			</Swiper>
 		</div>
 	);
