@@ -6,6 +6,10 @@ import BANNERFINAL from "./assets/BANNERFINAL.png";
 import fotojp from "./assets/fotojp.png";
 import Tarjetas from "./components/tarjetas.jsx";
 import EventosEspeciales from "./components/eventosespeciales.jsx";
+import imagenesDulce from "./exports/imagenesDulce.js";
+import imagenesSalado from "./exports/imagenesSalado.js";
+import imagenesTorta from "./exports/imagenesTorta.js";
+import Slider from "./components/Slider.jsx";
 
 const boxStyle = {
   backgroundColor: "#04545c",
@@ -14,6 +18,8 @@ const boxStyle = {
   alignItems: "center",
   flex: "1",
   margin: "0",
+  marginRight: "10px", // Ajustado el margen derecho
+  border: "1px solid black",
 };
 
 const buttonStyle = {
@@ -50,11 +56,12 @@ const containerStyle = {
   padding: "0",
   width: "100%",
   display: "flex",
-  justifyContent: "flex-start",
+  justifyContent: "center", // Cambiado a "center"
 };
 
 const imageStyle = {
-  margin: "120px", // Agrega márgenes a la foto en los cuatro lados
+  margin: "5%", // Cambiado a un valor en porcentaje
+  maxWidth: "100%", // Ajusta el tamaño máximo de la imagen
 };
 
 const contentStyle = {
@@ -92,23 +99,23 @@ function App() {
 
         <Tarjetas />
 
-        <h1>Vite + React</h1>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-        </div>
+        <h1 style={{ textAlign: "center", fontFamily: "Futura, sans-serif" }}>
+          Dulce
+        </h1>
+        <Slider images={imagenesDulce} />
+        <h1 style={{ textAlign: "center", fontFamily: "Futura, sans-serif" }}>
+          Salado
+        </h1>
+        <Slider images={imagenesSalado} />
+        <h1 style={{ textAlign: "center", fontFamily: "Futura, sans-serif" }}>
+          Tortas
+        </h1>
+        <Slider images={imagenesTorta} />
 
         <EventosEspeciales />
 
         <div style={containerStyle}>
-          <div
-            style={{
-              ...boxStyle,
-              border: "1px solid black",
-              marginRight: "10px",
-            }}
-          >
+          <div className="box-container1" style={boxStyle}>
             <img src={fotojp} alt="Foto Juan Pablo" style={imageStyle} />
             <h3 style={{ ...textStyle, textAlign: "left" }}>
               <span style={{ fontWeight: "bold", fontSize: "24px" }}>

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import logo from "../assets/logo.png";
+import "../styles/header.css";
 
 function Header() {
   useEffect(() => {
@@ -38,54 +39,21 @@ function Header() {
     zIndex: 100,
   };
 
-  const logoStyle = {
-    marginLeft: "60px",
-    marginRight: "10px",
-    marginTop: "1px",
-    marginBottom: "1px",
-    width: "400px",
-    height: "auto",
-    transition: "opacity 0.3s ease-in-out",
-  };
-
-  const h1Style = {
-    fontFamily: "Futura, sans-serif",
-    color: "white",
-    backgroundColor: "#1EAEAC",
-    fontSize: "15px",
-    borderRadius: "10px",
-    lineHeight: "1.2",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    marginRight: "40px",
-    padding: "15px",
-    width: "96%",
-    transition: "opacity 0.3s ease-in-out", // Agregamos la transición de opacidad
-  };
-
-  const spanStyle = {
-    marginBottom: "5px",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  };
-
   return (
     <header style={headerStyle}>
       <div>
-        <img id="header-logo" src={logo} alt="Logo" style={logoStyle} />
+        <img id="header-logo" src={logo} alt="Logo" />
       </div>
       <div style={{ marginRight: "20px" }}>
-        <h1 id="header-title" style={h1Style}>
-          <div style={{ ...spanStyle, marginTop: "10px" }}>
+        <h1 id="header-title">
+          <div style={{ marginTop: "10px" }}>
             ¡Te doy la bienvenida a mi página web! Gracias por estar acá.
           </div>
-          <div style={spanStyle}>
+          <div>
             En esta página podrás ver un poco de los productos que hago y
             conocerme. Todos son realizados por encargo y en forma casera.
           </div>
-          <div style={spanStyle}>
+          <div>
             Te invito a recorrer mi página y contactarme para armar juntos la
             mejor propuesta personalizada.
           </div>
