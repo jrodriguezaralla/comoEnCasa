@@ -5,5 +5,7 @@ import S4 from '../assets/salado/S4.png';
 import S5 from '../assets/salado/S5.png';
 import S6 from '../assets/salado/S6.png';
 import S7 from '../assets/salado/S7.png';
+import S8 from '../assets/salado/S8.png';
+import S9 from '../assets/salado/S9.png';
 
-export default [S1, S2, S3, S4, S5, S6, S7];
+export default [S1, S2, S3, S4, S5, S6, S7, S8, S9];

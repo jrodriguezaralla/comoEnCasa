@@ -1,11 +1,11 @@
-import dulce1 from '../assets/dulce/dulce1.jpg';
-import dulce2 from '../assets/dulce/dulce2.jpg';
-import dulce3 from '../assets/dulce/dulce3.jpg';
-import dulce4 from '../assets/dulce/dulce4.jpg';
-import dulce5 from '../assets/dulce/dulce5.jpg';
-import dulce6 from '../assets/dulce/dulce6.jpg';
-import dulce7 from '../assets/dulce/dulce7.jpg';
-import dulce8 from '../assets/dulce/dulce8.jpg';
-import dulce9 from '../assets/dulce/dulce9.jpg';
+import D1 from '../assets/dulce/D1.png';
+import D2 from '../assets/dulce/D2.png';
+import D3 from '../assets/dulce/D3.png';
+import D4 from '../assets/dulce/D4.png';
+import D5 from '../assets/dulce/D5.png';
+import D6 from '../assets/dulce/D6.png';
+import D7 from '../assets/dulce/D7.png';
+import D8 from '../assets/dulce/D8.png';
+import D9 from '../assets/dulce/D9.png';
 
-export default [dulce1, dulce2, dulce3, dulce4, dulce5, dulce6, dulce7, dulce8, dulce9];
+export default [D1, D2, D3, D4, D5, D6, D7, D8, D9];
