@@ -63,8 +63,11 @@ function EventosEspeciales() {
 	const logoStyle = {
 		width: '100px',
 		height: '100px',
-		marginBottom: '475px',
-		marginLeft: '15px',
+		position: 'fixed',
+		top: '85%',
+		left: '90%',
+		// marginBottom: '475px',
+		// marginLeft: '15px',
 		borderRadius: '35%',
 		boxShadow: isHovered ? '4px 4px 5px 1px rgba(0, 0, 0, 0.3)' : '2px 4px 5px 0px rgba(0, 0, 0, 0.2)',
 		transition: 'box-shadow 0.3s ease',
