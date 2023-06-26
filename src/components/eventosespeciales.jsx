@@ -30,8 +30,8 @@ function EventosEspeciales() {
 		width: '100%',
 		height: '100%',
 		objectFit: 'cover',
-		borderTopLeftRadius: '50px',
-		borderTopRightRadius: '50px',
+		borderTopLeftRadius: '20px',
+		borderTopRightRadius: '20px',
 	};
 
 	const bodyStyle = {
@@ -39,8 +39,8 @@ function EventosEspeciales() {
 		color: 'white',
 		padding: '45px',
 		margin: '3px 0',
-		borderBottomLeftRadius: '50px',
-		borderBottomRightRadius: '50px',
+		borderBottomLeftRadius: '20px',
+		borderBottomRightRadius: '20px',
 		fontFamily: 'Futura-Bold, sans-serif', // Cambiado a Futura-Bold
 		fontSize: '20px', // Modificado el tamaño a 20px
 		textAlign: 'center',
