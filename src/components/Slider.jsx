@@ -57,7 +57,7 @@ const Slider = ({ images }) => {
 				slidesPerView={'auto'}
 				coverflowEffect={{
 					rotate: 0,
-					stretch: 0,
+					stretch: 10,
 					depth: 100,
 					modifier: 2.5,
 				}}

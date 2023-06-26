@@ -1,35 +1,3 @@
-/**,
-*::before,
-*::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	list-style-type: none;
-}
-
-html {
-	font-size: 62.5%;
-	scroll-behavior: smooth;
-}
-*/ /*
-@media (min-width: 1440px) {
-	.swiper_container {
-		zoom: 1.5;
-	}
-}
-
-@media (min-width: 2560px) {
-	.swiper_container {
-		zoom: 1.7;
-	}
-}
-
-@media (min-width: 3860px) {
-	.swiper_container {
-		zoom: 2.5;
-	}
-}*/
-
 ::-webkit-scrollbar {
 	width: 1.3rem;
 }
@@ -47,14 +15,9 @@ html {
 ::-webkit-scrollbar-track {
 	background: #f9f9f9;
 }
-/*
-.swiper_container {
-	font-size: 1.6rem;
-	background: var(--bg);
-}
-*/
+
 .container {
-	max-width: 90%;
+	max-width: 70%;
 	margin: 0 auto;
 }
 
@@ -69,20 +32,6 @@ html {
 	width: 25rem;
 	height: 20rem;
 }
-/*
-@media (max-width: 500px) {
-	.swiper_container {
-		height: 47rem;
-	}
-	.swiper-slide {
-		width: 28rem !important;
-		height: 36rem !important;
-	}
-	.swiper-slide img {
-		width: 28rem !important;
-		height: 36rem !important;
-	}
-}*/
 
 .swiper-slide img {
 	width: 305.3px;
@@ -159,11 +108,6 @@ html {
 	font-size: 3rem;
 	color: white;
 }
-
-/*
-.slider-controler .slider-arrow::after {
-	content: '';
-}*/
 
 .swiper-pagination {
 	position: relative;
