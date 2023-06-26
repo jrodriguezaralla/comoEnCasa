@@ -2,7 +2,7 @@ import React from "react";
 import iconoFacebook from "../assets/IconoFacebook.png";
 import iconoWhatsapp from "../assets/IconoWhatsapp.jpg";
 import iconoInstagram from "../assets/IconoInstagram.png";
-import "../styles/footer.css"; // Importa el archivo CSS
+import "../styles/footer.css";
 
 function Footer() {
   return (
