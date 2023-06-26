@@ -48,6 +48,8 @@ const Slider = ({ images }) => {
 	return (
 		<div className="container">
 			<Swiper
+				initialSlide={0}
+				slideShadows={true}
 				effect={'coverflow'}
 				grabCursor={true}
 				centeredSlides={true}
@@ -55,7 +57,7 @@ const Slider = ({ images }) => {
 				slidesPerView={'auto'}
 				coverflowEffect={{
 					rotate: 0,
-					stretch: 20,
+					stretch: 0,
 					depth: 100,
 					modifier: 2.5,
 				}}
