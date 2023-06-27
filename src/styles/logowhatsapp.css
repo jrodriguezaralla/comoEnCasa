@@ -2,7 +2,7 @@
 .logo-whatsapp-container {
 	background-color: #ffffff;
 	position: fixed;
-	top: 80vh;
+	bottom: 5vh;
 	right: 5vw;
 	z-index: 1000;
 	box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.2);

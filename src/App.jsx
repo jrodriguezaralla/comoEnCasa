@@ -23,33 +23,11 @@ const boxStyle = {
 	border: '1px solid black',
 };
 
-const buttonStyle = {
-	margin: '5px',
-	padding: '10px',
-	backgroundColor: '#FFFFFF',
-	color: '#4F2D24',
-	border: 'none',
-	borderRadius: '50%',
-	display: 'flex',
-	alignItems: 'center',
-	justifyContent: 'center',
-};
-
-const iconStyle = {
-	width: '35px',
-	height: '35px',
-	marginRight: '5px',
-};
-
 const textStyle = {
 	fontFamily: 'Futura, sans-serif',
 	color: '#FFFFFF',
 	fontSize: '16px',
 	width: '100%',
-};
-
-const bannerStyle = {
-	width: '100vw',
 };
 
 const containerStyle = {
@@ -63,10 +41,6 @@ const containerStyle = {
 const imageStyle = {
 	margin: '5%', // Cambiado a un valor en porcentaje
 	maxWidth: '100%', // Ajusta el tamaño máximo de la imagen
-};
-
-const contentStyle = {
-	marginTop: '70px', // Agrega margen superior para el contenido
 };
 
 function App() {
@@ -90,18 +64,18 @@ function App() {
 		<div className="app-container">
 			<Header />
 
-			<div className="content" style={contentStyle}>
-				<img src={BANNERFINAL} alt="Foto Juan Pablo" style={{ ...bannerStyle, marginRight: 0 }} className="banner" />
+			<div className="banner-container">
+				<img src={BANNERFINAL} alt="Foto Juan Pablo" className="banner-img img-fluid" />
 
 				<LogoWhatapp />
 
 				<Tarjetas />
 
-				<h1 style={{ textAlign: 'center', fontFamily: 'Futura, sans-serif' }}>Dulce</h1>
+				<h1 className="titulos_h1">Dulce</h1>
 				<Slider images={imagenesDulce} />
-				<h1 style={{ textAlign: 'center', fontFamily: 'Futura, sans-serif' }}>Salado</h1>
+				<h1 className="titulos_h1">Salado</h1>
 				<Slider images={imagenesSalado} />
-				<h1 style={{ textAlign: 'center', fontFamily: 'Futura, sans-serif' }}>Tortas</h1>
+				<h1 className="titulos_h1">Tortas</h1>
 				<Slider images={imagenesTorta} />
 
 				<EventosEspeciales />
