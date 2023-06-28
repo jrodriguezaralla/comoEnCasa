@@ -46,7 +46,7 @@ const Slider = ({ images }) => {
 	}, []);
 
 	return (
-		<div className="container">
+		<div className="slider-container">
 			<Swiper
 				initialSlide={0}
 				slideShadows={true}

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-
 import Header from './components/header.jsx';
 import Footer from './components/footer.jsx';
 import './App.css';
@@ -7,11 +6,11 @@ import BANNERFINAL from './assets/BANNERFINAL.png';
 import fotojp from './assets/fotojp.png';
 import Tarjetas from './components/tarjetas.jsx';
 import EventosEspeciales from './components/eventosespeciales.jsx';
-
 import imagenesDulce from './exports/imagenesDulce.js';
 import imagenesSalado from './exports/imagenesSalado.js';
 import imagenesTorta from './exports/imagenesTorta.js';
 import Slider from './components/Slider.jsx';
+import LogoWhatapp from './components/LogoWhatapp.jsx';
 
 const boxStyle = {
 	backgroundColor: '#04545c',
@@ -20,24 +19,7 @@ const boxStyle = {
 	alignItems: 'center',
 	flex: '1',
 	margin: '0',
-};
-
-const buttonStyle = {
-	margin: '5px',
-	padding: '10px',
-	backgroundColor: '#FFFFFF',
-	color: '#4F2D24',
-	border: 'none',
-	borderRadius: '50%',
-	display: 'flex',
-	alignItems: 'center',
-	justifyContent: 'center',
-};
-
-const iconStyle = {
-	width: '35px',
-	height: '35px',
-	marginRight: '5px',
+	border: '1px solid black',
 };
 
 const textStyle = {
@@ -47,24 +29,17 @@ const textStyle = {
 	width: '100%',
 };
 
-const bannerStyle = {
-	width: '100vw',
-};
-
 const containerStyle = {
 	margin: '0',
 	padding: '0',
 	width: '100%',
 	display: 'flex',
-	justifyContent: 'flex-start',
+	justifyContent: 'center', // Cambiado a "center"
 };
 
 const imageStyle = {
-	margin: '120px', // Agrega márgenes a la foto en los cuatro lados
-};
-
-const contentStyle = {
-	marginTop: '70px', // Agrega margen superior para el contenido
+	margin: '5%', // Cambiado a un valor en porcentaje
+	maxWidth: '100%', // Ajusta el tamaño máximo de la imagen
 };
 
 function App() {
@@ -87,30 +62,27 @@ function App() {
 	return (
 		<div className="app-container">
 			<Header />
-			<div className="content" style={contentStyle}>
-				<img src={BANNERFINAL} alt="Foto Juan Pablo" style={{ ...bannerStyle, marginRight: 0 }} className="banner" />
+
+			<div className="banner-container w-100">
+				<img src={BANNERFINAL} alt="Foto Juan Pablo" className="banner-img img-fluid" />
+
+				<LogoWhatapp />
 
 				<Tarjetas />
 
-				<h1 style={{ textAlign: 'center', fontFamily: 'Futura, sans-serif' }}>Dulce</h1>
+				<h1 className="titulos_h1">Dulce</h1>
 				<Slider images={imagenesDulce} />
-				<h1 style={{ textAlign: 'center', fontFamily: 'Futura, sans-serif' }}>Salado</h1>
+				<h1 className="titulos_h1">Salado</h1>
 				<Slider images={imagenesSalado} />
-				<h1 style={{ textAlign: 'center', fontFamily: 'Futura, sans-serif' }}>Tortas</h1>
+				<h1 className="titulos_h1">Tortas</h1>
 				<Slider images={imagenesTorta} />
 
 				<EventosEspeciales />
 
 				<div style={containerStyle}>
-					<div
-						style={{
-							...boxStyle,
-							border: '1px solid black',
-							marginRight: '10px',
-						}}
-					>
+					<div className="box-container1" style={boxStyle}>
 						<img src={fotojp} alt="Foto Juan Pablo" style={imageStyle} />
-						<h3 style={{ ...textStyle, textAlign: 'left' }}>
+						<h3 style={{ ...textStyle, textAlign: 'justify' }}>
 							<span style={{ fontWeight: 'bold', fontSize: '24px' }}>Sobre mí.</span>
 							<br />
 							Mi nombre es Juan Pablo Sayag, soy Chef-Pastelero profesional y creador de “Como en Casa norte y sur”.

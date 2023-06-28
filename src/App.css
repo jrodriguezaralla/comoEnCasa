@@ -1,81 +1,82 @@
 #root {
-  max-width: 1280px;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+	max-width: 1280px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+	height: 6em;
+	padding: 1.5em;
+	will-change: filter;
+	transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+	filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+	filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+	a:nth-of-type(2) .logo {
+		animation: logo-spin infinite 20s linear;
+	}
 }
 
 .card {
-  padding: 2em;
+	padding: 2em;
 }
 
 .read-the-docs {
-  color: #888;
+	color: #888;
 }
 
-.carousel-container {
-  position: relative;
-  top: 200px;
-  height: calc(100vh - 50px);
-  overflow: hidden;
+.banner-container {
+	margin-top: 2rem; /* Agrega margen superior para el contenido*/
+	width: 100%;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
+.banner-container .banner-img {
+	width: 100%; /*Ajusta el tamaño máximo de la imagen*/
 }
 
 .app-container {
-  padding-top: 80px;
-}
-
-body {
-  margin: 0;
-  overflow-x: hidden;
-}
-
-.banner {
-  margin-right: 0;
-}
-
-.app-container {
-  padding-top: 80px;
-  width: 100vw;
+	width: 100vw;
 }
 
 @font-face {
-  font-family: "Futura";
-  src: url("./assets/font/futuramediumbt.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Futura';
+	src: url('./assets/font/futuramediumbt.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.titulos_h1 {
+	font-size: 3rem;
+	margin: 1rem 0;
+	text-align: center;
+	font-family: Futura, sans-serif;
+}
+
+@media (max-width: 950px) {
+	.titulos_h1 {
+		font-size: 2rem;
+	}
+
+	.box-container1 {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin: 2px;
+	}
 }

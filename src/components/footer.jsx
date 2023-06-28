@@ -1,105 +1,29 @@
-import React from "react";
-import iconoFacebook from "../assets/IconoFacebook.png";
-import iconoWhatsapp from "../assets/IconoWhatsapp.jpg";
-import iconoInstagram from "../assets/IconoInstagram.png";
-import fotojp from "../assets/fotojp.png";
+import React from 'react';
+import iconoFacebook from '../assets/IconoFacebook.png';
+import iconoWhatsapp from '../assets/IconoWhatsapp.jpg';
+import iconoInstagram from '../assets/IconoInstagram.png';
+import '../styles/footer.css';
 
 function Footer() {
-  const footerStyle = {
-    backgroundColor: "#1EAEAC",
-    color: "#FFFFFF",
-    padding: "10px",
-    width: "100%",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  };
-
-  const boxStyle = {
-    backgroundColor: "#04545c",
-    padding: "10px",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    width: "100%",
-  };
-
-  const buttonStyle = {
-    margin: "5px",
-    padding: "10px",
-    backgroundColor: "#FFFFFF",
-    color: "#4F2D24",
-    border: "none",
-    borderRadius: "50%",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    marginRight: "130px",
-  };
-
-  const iconStyle = {
-    width: "60px",
-    height: "60px",
-  };
-
-  const textStyle = {
-    fontFamily: "Futura, sans-serif",
-    color: "#FFFFFF",
-    fontSize: "14px",
-    width: "100%",
-  };
-
-  const imageStyle = {
-    maxWidth: "100%",
-    maxHeight: "100%",
-    width: "60px",
-    height: "60px",
-    borderRadius: "50%", // Agregamos el estilo para hacerlo redondo
-  };
-
-  return (
-    <footer style={footerStyle}>
-      <a
-        href="https://www.facebook.com/comoencasanorteysur/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <button style={buttonStyle}>
-          <img
-            src={iconoFacebook}
-            alt="Facebook"
-            style={{ ...iconStyle, ...imageStyle }}
-          />
-        </button>
-      </a>
-      <a
-        href="https://www.instagram.com/comoencasa_norteysur/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <button style={buttonStyle}>
-          <img
-            src={iconoInstagram}
-            alt="Instagram"
-            style={{ ...iconStyle, ...imageStyle }}
-          />
-        </button>
-      </a>
-      <a
-        href="https://api.whatsapp.com/send?phone=005491123153229"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <button style={buttonStyle}>
-          <img
-            src={iconoWhatsapp}
-            alt="WhatsApp"
-            style={{ ...iconStyle, ...imageStyle }}
-          />
-        </button>
-      </a>
-    </footer>
-  );
+	return (
+		<footer className="footer">
+			<a href="https://www.facebook.com/comoencasanorteysur/" target="_blank" rel="noopener noreferrer">
+				<button className="button">
+					<img src={iconoFacebook} alt="Facebook" className="icon" />
+				</button>
+			</a>
+			<a href="https://www.instagram.com/comoencasa_norteysur/" target="_blank" rel="noopener noreferrer">
+				<button className="button">
+					<img src={iconoInstagram} alt="Instagram" className="icon" />
+				</button>
+			</a>
+			<a href="https://api.whatsapp.com/send?phone=5491123153229" target="_blank" rel="noopener noreferrer">
+				<button className="button">
+					<img src={iconoWhatsapp} alt="WhatsApp" className="icon" />
+				</button>
+			</a>
+		</footer>
+	);
 }
 
 export default Footer;

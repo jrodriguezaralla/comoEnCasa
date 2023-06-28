@@ -1,0 +1,110 @@
+/* src/styles/tarjetas.css */
+
+.container-style {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	/* flex-wrap: wrap; */
+}
+
+.card-style {
+	width: 400px;
+	height: 400px;
+	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-style .card-img-top {
+	object-fit: contain; /* Ajusta el tamaño de la imagen sin distorsionarla */
+}
+
+.title-style {
+	color: #4f2d24;
+	font-family: Futura-Bold, sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+}
+
+.body-style {
+	color: black;
+	font-family: Futura-Medium, sans-serif;
+	font-size: 20px;
+	text-align: justify;
+}
+
+.image-style {
+	width: 180px;
+	height: 180px;
+	margin-bottom: 10px;
+}
+
+.card-body-style {
+	overflow: auto;
+	max-height: 200px;
+}
+
+/* Estilos para pantallas de 800 píxeles o menos */
+@media (max-width: 1400px) {
+	.card-style {
+		width: 300px;
+		height: 300px;
+	}
+
+	.title-style {
+		font-size: 25px;
+	}
+
+	.body-style {
+		font-size: 15px;
+	}
+
+	.image-style {
+		width: 120px;
+		height: 120px;
+	}
+
+	.card-body-style {
+		max-height: 200px;
+		padding-right: 15px;
+	}
+}
+
+/* Estilos para pantallas de 800 píxeles o menos */
+@media (max-width: 800px) {
+	.container-style {
+		flex-direction: column;
+	}
+}
+
+/* Estilos para pantallas de 405 píxeles o menos */
+@media (max-width: 405px) {
+	#header-title {
+		width: 90%;
+	}
+
+	.card-style {
+		width: 300px;
+		height: 300px;
+	}
+
+	.title-style {
+		font-size: 25px;
+	}
+
+	.body-style {
+		font-size: 12px;
+	}
+
+	.image-style {
+		width: 100px;
+		height: 100px;
+	}
+
+	.card-body-style {
+		max-height: 200px;
+		padding-right: 15px;
+	}
+}
