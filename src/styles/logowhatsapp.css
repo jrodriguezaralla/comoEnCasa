@@ -30,7 +30,7 @@
 	height: 80%;
 }
 
-@media (max-width: 405px) {
+@media (max-width: 800px) {
 	.logo-whatsapp-container {
 		scale: 0.7;
 	}

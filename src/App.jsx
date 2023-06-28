@@ -83,7 +83,7 @@ function App() {
 				<div style={containerStyle}>
 					<div className="box-container1" style={boxStyle}>
 						<img src={fotojp} alt="Foto Juan Pablo" style={imageStyle} />
-						<h3 style={{ ...textStyle, textAlign: 'left' }}>
+						<h3 style={{ ...textStyle, textAlign: 'justify' }}>
 							<span style={{ fontWeight: 'bold', fontSize: '24px' }}>Sobre mí.</span>
 							<br />
 							Mi nombre es Juan Pablo Sayag, soy Chef-Pastelero profesional y creador de “Como en Casa norte y sur”.

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 import MesaDeCumple from '../assets/tortas.jpeg';
 import CajasDiasEspeciales from '../assets/alfajores.jpg';
 import VariadosParaFrezzer from '../assets/bondiola.jpg';
@@ -19,34 +20,6 @@ function EventosEspeciales() {
 		position: 'relative',
 	};
 
-	const titleStyle = {
-		fontFamily: 'Futura, sans-serif',
-		fontWeight: 'bold',
-		fontSize: '20px',
-		textAlign: 'center',
-		margin: 0,
-	};
-
-	const imageStyle = {
-		width: '100%',
-		height: '100%',
-		objectFit: 'cover',
-		borderTopLeftRadius: '20px',
-		borderTopRightRadius: '20px',
-	};
-
-	const bodyStyle = {
-		backgroundColor: '#4F2D24',
-		color: 'white',
-		padding: '45px',
-		margin: '3px 0',
-		borderBottomLeftRadius: '20px',
-		borderBottomRightRadius: '20px',
-		fontFamily: 'Futura-Bold, sans-serif',
-		fontSize: '20px',
-		textAlign: 'center',
-	};
-
 	const containerStyle = {
 		display: 'flex',
 		justifyContent: 'center',
@@ -58,62 +31,40 @@ function EventosEspeciales() {
 		<div>
 			<h1 style={{ textAlign: 'center', fontFamily: 'Futura, sans-serif' }}>Eventos Especiales</h1>
 
-			<div style={containerStyle}>
-				<div style={{ margin: '10px' }}>
-					<div style={{ width: '100%' }}>
-						<Card style={cardStyle} className="custom-card">
-							<Card.Img variant="top" src={MesaDeCumple} style={imageStyle} />
-							<Card.Body style={bodyStyle}>
-								<Card.Title style={titleStyle}>MESA DE CUMPLE</Card.Title>
-							</Card.Body>
-						</Card>
-					</div>
-
-					<div style={{ width: '100%' }}>
-						<Card style={cardStyle} className="custom-card">
-							<Card.Img variant="top" src={VariadosParaFrezzer} style={imageStyle} />
-							<Card.Body style={bodyStyle}>
-								<Card.Title style={titleStyle}>VARIADOS PARA FREZZER</Card.Title>
-							</Card.Body>
-						</Card>
-					</div>
-				</div>
-
-				<div style={{ margin: '10px' }}>
-					<div style={{ width: '100%' }}>
-						<Card style={cardStyle} className="custom-card">
-							<Card.Img variant="top" src={CajasDiasEspeciales} style={imageStyle} />
-							<Card.Body style={bodyStyle}>
-								<Card.Title style={titleStyle}>CAJA DIAS ESPECIALES</Card.Title>
-							</Card.Body>
-						</Card>
-					</div>
-
-					<div style={{ width: '100%' }}>
-						<Card style={cardStyle} className="custom-card">
-							<Card.Img variant="top" src={ComidaEventos} style={imageStyle} />
-							<Card.Body style={bodyStyle}>
-								<Card.Title style={titleStyle}>COMIDA EVENTOS</Card.Title>
-							</Card.Body>
-						</Card>
-					</div>
-				</div>
-			</div>
-
-			<style>
-				{`
-          @media (max-width: 450px) {
-            .custom-card {
-              width: 250px !important;
-              height: 250px !important;
-            }
-            .custom-card .card-body {
-              padding: 10px !important;
-              font-size: 16px !important;
-            }
-          }
-        `}
-			</style>
+			<Row className="g-4 d-flex justify-content-center align-item-center mb-5">
+				<Col xs={12} md={6} className="d-flex justify-content-sm-center justify-content-md-end align-item-center">
+					<Card className="card-container d-flex flex-column p-0 border border-0 my-3">
+						<Card.Img variant="top" src={MesaDeCumple} className="overflow-hidden card-image-style img-fluid" />
+						<Card.Body className="card-body-es">
+							<Card.Title className="card-title-es">MESA DE CUMPLE</Card.Title>
+						</Card.Body>
+					</Card>
+				</Col>
+				<Col xs={12} md={6} className="d-flex justify-content-sm-center justify-content-md-start align-item-center">
+					<Card className="card-container d-flex flex-column p-0 border border-0 my-3">
+						<Card.Img variant="top" src={CajasDiasEspeciales} className="overflow-hidden card-image-style img-fluid" />
+						<Card.Body className="card-body-es">
+							<Card.Title className="card-title-es">CAJA DIAS ESPECIALES</Card.Title>
+						</Card.Body>
+					</Card>
+				</Col>
+				<Col xs={12} md={6} className="d-flex justify-content-sm-center justify-content-md-end align-item-center">
+					<Card className="card-container d-flex flex-column p-0 border border-0 my-3">
+						<Card.Img variant="top" src={VariadosParaFrezzer} className="overflow-hidden card-image-style img-fluid" />
+						<Card.Body className="card-body-es">
+							<Card.Title className="card-title-es">VARIADOS PARA FREZZER</Card.Title>
+						</Card.Body>
+					</Card>
+				</Col>
+				<Col xs={12} md={6} className="d-flex justify-content-sm-center justify-content-md-start align-item-center">
+					<Card className="card-container d-flex flex-column p-0 border border-0 my-3">
+						<Card.Img variant="top" src={ComidaEventos} className="overflow-hidden card-image-style img-fluid" />
+						<Card.Body className="card-body-es">
+							<Card.Title className="card-title-es">COMIDA EVENTOS</Card.Title>
+						</Card.Body>
+					</Card>
+				</Col>
+			</Row>
 		</div>
 	);
 }
