@@ -31,8 +31,8 @@ function EventosEspeciales() {
 		<div>
 			<h1 style={{ textAlign: 'center', fontFamily: 'Futura, sans-serif' }}>Eventos Especiales</h1>
 
-			<Row className="g-4 d-flex justify-content-center align-item-center mb-5">
-				<Col xs={12} md={6} className="d-flex justify-content-sm-center justify-content-md-end align-item-center">
+			<Row className="g-4 d-flex justify-content-center align-item-center mb-5 w-100">
+				<Col xs={12} md={6} className="d-flex justify-content-center justify-content-md-end align-item-center">
 					<Card className="card-container d-flex flex-column p-0 border border-0 my-3">
 						<Card.Img variant="top" src={MesaDeCumple} className="overflow-hidden card-image-style img-fluid" />
 						<Card.Body className="card-body-es">
@@ -40,7 +40,7 @@ function EventosEspeciales() {
 						</Card.Body>
 					</Card>
 				</Col>
-				<Col xs={12} md={6} className="d-flex justify-content-sm-center justify-content-md-start align-item-center">
+				<Col xs={12} md={6} className="d-flex justify-content-center justify-content-md-start align-item-center">
 					<Card className="card-container d-flex flex-column p-0 border border-0 my-3">
 						<Card.Img variant="top" src={CajasDiasEspeciales} className="overflow-hidden card-image-style img-fluid" />
 						<Card.Body className="card-body-es">
@@ -48,7 +48,7 @@ function EventosEspeciales() {
 						</Card.Body>
 					</Card>
 				</Col>
-				<Col xs={12} md={6} className="d-flex justify-content-sm-center justify-content-md-end align-item-center">
+				<Col xs={12} md={6} className="d-flex justify-content-center justify-content-md-end align-item-center">
 					<Card className="card-container d-flex flex-column p-0 border border-0 my-3">
 						<Card.Img variant="top" src={VariadosParaFrezzer} className="overflow-hidden card-image-style img-fluid" />
 						<Card.Body className="card-body-es">
@@ -56,7 +56,7 @@ function EventosEspeciales() {
 						</Card.Body>
 					</Card>
 				</Col>
-				<Col xs={12} md={6} className="d-flex justify-content-sm-center justify-content-md-start align-item-center">
+				<Col xs={12} md={6} className="d-flex justify-content-center justify-content-md-start align-item-center">
 					<Card className="card-container d-flex flex-column p-0 border border-0 my-3">
 						<Card.Img variant="top" src={ComidaEventos} className="overflow-hidden card-image-style img-fluid" />
 						<Card.Body className="card-body-es">

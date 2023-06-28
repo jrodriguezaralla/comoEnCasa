@@ -3,35 +3,12 @@ import logo from '../assets/logo.png';
 import '../styles/header.css';
 
 function Header() {
-	// useEffect(() => {
-	// 	const handleScroll = () => {
-	// 		const logo = document.querySelector('#header-logo');
-	// 		const header = document.querySelector('header');
-	// 		const h1 = document.querySelector('#header-title');
-
-	// 		if (window.scrollY > 0) {
-	// 			logo.style.opacity = '0';
-	// 			header.style.backgroundColor = 'transparent';
-	// 			h1.style.opacity = '0';
-	// 		} else {
-	// 			logo.style.opacity = '1';
-	// 			header.style.backgroundColor = 'white';
-	// 			h1.style.opacity = '1';
-	// 		}
-	// 	};
-
-	// 	window.addEventListener('scroll', handleScroll);
-	// 	return () => {
-	// 		window.removeEventListener('scroll', handleScroll);
-	// 	};
-	// }, []);
-
 	return (
-		<header className="header-container">
+		<header className="header-container w-100">
 			<div>
 				<img id="header-logo" src={logo} alt="Logo" />
 			</div>
-			<div className="header-title-container">
+			<div className="header-title-container w-75">
 				<h1 id="header-title">
 					<div style={{ marginTop: '10px' }}>¡Te doy la bienvenida a mi página web! Gracias por estar acá.</div>
 					<div>

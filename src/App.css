@@ -40,13 +40,6 @@
 .read-the-docs {
 	color: #888;
 }
-/*
-.carousel-container {
-	position: relative;
-	top: 25px;
-	height: 500px;
-	overflow: hidden;
-}*/
 
 .banner-container {
 	margin-top: 2rem; /* Agrega margen superior para el contenido*/
@@ -66,10 +59,6 @@
 	src: url('./assets/font/futuramediumbt.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
-}
-
-body {
-	width: 95vw;
 }
 
 .titulos_h1 {

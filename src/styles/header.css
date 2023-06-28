@@ -39,7 +39,7 @@
 	flex-direction: column;
 	align-items: center;
 	padding: 15px;
-	width: 100%;
+	width: 90%;
 	transition: opacity 0.3s ease-in-out;
 }
 

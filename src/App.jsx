@@ -19,7 +19,6 @@ const boxStyle = {
 	alignItems: 'center',
 	flex: '1',
 	margin: '0',
-	marginRight: '10px', // Ajustado el margen derecho
 	border: '1px solid black',
 };
 
@@ -64,7 +63,7 @@ function App() {
 		<div className="app-container">
 			<Header />
 
-			<div className="banner-container">
+			<div className="banner-container w-100">
 				<img src={BANNERFINAL} alt="Foto Juan Pablo" className="banner-img img-fluid" />
 
 				<LogoWhatapp />

@@ -8,9 +8,9 @@ import '../styles/tarjetas.css';
 
 function Tarjetas() {
 	return (
-		<div className="container-style">
+		<div className="container-style mt-5">
 			<Card className="card-style p-2">
-				<div className="d-flex justify-content-center align-item-center">
+				<div className="d-flex justify-content-center align-item-center mt-2">
 					<Card.Img variant="top" src={Iconopedidos} className="img-fluid image-style" />
 				</div>
 				<Card.Body className="card-body-style">
@@ -20,7 +20,7 @@ function Tarjetas() {
 			</Card>
 
 			<Card className="card-style p-2">
-				<div className="d-flex justify-content-center align-item-center">
+				<div className="d-flex justify-content-center align-item-center mt-2">
 					<Card.Img variant="top" src={Iconoenvios} className="img-fluid image-style" />
 				</div>
 				<Card.Body className="card-body-style">
@@ -30,7 +30,7 @@ function Tarjetas() {
 			</Card>
 
 			<Card className="card-style p-2">
-				<div className="d-flex justify-content-center align-item-center">
+				<div className="d-flex justify-content-center align-item-center mt-2">
 					<Card.Img variant="top" src={Iconoretiros} className="img-fluid image-style" />
 				</div>
 				<Card.Body className="card-body-style">
